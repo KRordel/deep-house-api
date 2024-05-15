@@ -22,9 +22,9 @@ class UpdateUserRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => ['sometimes', 'string', 'max:255'],
-            'email' => ['sometimes', 'email', 'unique:users,'.$this['user']],
-            'password' => ['sometimes', 'string', 'confirmed']
+            'name' => ['sometimes', 'string', 'max:190'],
+            'email' => ['sometimes', 'email', 'max:190', 'unique:users,email,'.$this['user']],
+            'password' => ['sometimes', 'string', 'confirmed', 'max:190']
         ];
     }
 }
