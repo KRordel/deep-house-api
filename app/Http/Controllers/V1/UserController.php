@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\V1;
 
 use App\Http\Controllers\ApiController;
-use App\Http\Requests\V1\CreateUserRequest;
-use App\Http\Requests\V1\UpdateUserRequest;
+use App\Http\Requests\V1\User\CreateUserRequest;
+use App\Http\Requests\V1\User\UpdateUserRequest;
 use App\Http\Resources\V1\UserResource;
 use App\Models\User;
 use Illuminate\Http\JsonResponse;
