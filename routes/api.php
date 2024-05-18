@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\V1\UserController;
 use App\Http\Controllers\V1\FaqController;
+use App\Http\Controllers\V1\ReviewController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -12,4 +13,5 @@ Route::get('/user', function (Request $request) {
 Route::prefix('v1')->group(function() {
     Route::resource('users', UserController::class);
     Route::resource('faqs', FaqController::class);
+    Route::resource('reviews', ReviewController::class);
 });
